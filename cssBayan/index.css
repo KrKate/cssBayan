@@ -65,7 +65,9 @@ body {
     }
 
     .input:checked ~ .meme-item .title .plus {
-        transform: rotate(45deg);
+        transition: transform 0.5s linear;
+        transform: rotate(405deg);
+        transform-origin: center center;
     }
 
     .img {
@@ -81,7 +83,6 @@ body {
 
     .meme-wrapper {
         border-bottom: 0.1em solid rgb(120, 118, 118);
-        margin-bottom: 15%;
     }
 
 }
