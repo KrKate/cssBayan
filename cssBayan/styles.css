@@ -12,7 +12,7 @@
 body {
    font-family: "SecularOne", sans-serif;
    background-color: #eee1bf;
-   height: 101vh;
+   height: 70vh;
 }
 
 
@@ -29,7 +29,7 @@ body {
     .wrapper {
         max-width: 90vw;
         margin: 0 auto;
-        padding: 5vw;
+        padding: 2%;
     }
 
     .meme {
@@ -81,7 +81,17 @@ body {
     }
 
 }
+/*-------------------------------------------------*/
 
+@media all and (min-width: 500px) {
+    .wrapper {
+        max-width: 60vw;
+        margin: 0 auto;
+        padding: 5vw;
+    }
+}
+
+/*-------------------------------------------------*/
 @media all and (min-width: 820px) {
     .h1 {
         font-size: 1.5em;
@@ -97,10 +107,13 @@ body {
         padding: 2vw;
     }
 
-    .meme-title {
-        width: 100%;
-        font-size: 1.3em;
-        cursor: pointer;
+/*---------------------------------------------------------------------*/
+    @media all and (min-width: 1200px) {
+        .wrapper {
+            max-width: 35vw;
+            margin: 0 auto;
+            padding: 5vw;
+        }
     }
 
     .fa {
@@ -124,28 +137,41 @@ body {
         opacity: 1;
         transition: all 0.5s linear;
     }
+}
+/*---------------------------------------------------------*/
+@media all and (min-width: 1000px) {
+    .wrapper {
+        max-width: 40vw;
+        margin: 0 auto;
+        padding: 5vw;
+    }
+}
+/*---------------------------------------------------------*/
 
-    .wrapper:hover {
-        color:rgb(25, 25, 33)
+@media all and (min-width: 1200px) {
+    .wrapper {
+        max-width: 35vw;
+        margin: 0 auto;
+        padding: 5vw;
+    }
+}
+/*---------------------------------------------------------*/
+
+@media all and (min-width: 1400px) {
+    .wrapper {
+        max-width: 32vw;
+        margin: 0 auto;
+        padding: 5vw;
     }
 
-    .wrapper:hover .fa{
-       opacity: 1;
-    }
-
-    .meme-item:hover .img {
-        height: 30vh;
-        opacity: 1;
-        transition: all 0.5s linear;
-    }
-
-    .meme-item:hover .fa {
-        transform: rotate(405deg);
-        transition: all 0.6 linear;
+    .meme-title {
+        width: 100%;
+        font-size: 1em;
+        cursor: pointer;
     }
 }
 
-
+/*---------------------------------------------------------*/
 @media all and (min-width: 1920px) {
     .h1 {
         font-size: 3.2em;
@@ -194,6 +220,7 @@ body {
 
 }
 
+/*Для устройств, поддерживающих hover---------------------------------------*/
 @media(hover:hover) {
     .wrapper:hover {
         color:rgb(25, 25, 33)
