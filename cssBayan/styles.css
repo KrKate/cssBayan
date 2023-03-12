@@ -12,7 +12,7 @@
 body {
    font-family: "SecularOne", sans-serif;
    background-color: #eee1bf;
-   height: 100vh;
+   height: 101vh;
 }
 
 
@@ -104,6 +104,7 @@ body {
     }
 
     .fa {
+        opacity: 0;
         margin-top: 3%;
         font-size: 1.5em;
     }
@@ -114,6 +115,8 @@ body {
         text-align: center;
         height: 0;
         opacity: 0;
+        cursor: pointer;
+        transition: all 0.5s linear;
     }
 
     .input:checked ~ .meme-item .img {
@@ -124,10 +127,21 @@ body {
 
     .wrapper:hover {
         color:rgb(25, 25, 33)
-    } 
+    }
 
-    .meme-item:hover {
-        color:aqua;
+    .wrapper:hover .fa{
+       opacity: 1;
+    }
+
+    .meme-item:hover .img {
+        height: 30vh;
+        opacity: 1;
+        transition: all 0.5s linear;
+    }
+
+    .meme-item:hover .fa {
+        transform: rotate(405deg);
+        transition: all 0.6 linear;
     }
 }
 
@@ -178,4 +192,25 @@ body {
         font-size: 3em;
     }
 
+}
+
+@media(hover:hover) {
+    .wrapper:hover {
+        color:rgb(25, 25, 33)
+    }
+
+    .wrapper:hover .fa{
+       opacity: 1;
+    }
+
+    .meme-item:hover .img {
+        height: 30vh;
+        opacity: 1;
+        transition: all 0.5s linear;
+    }
+
+    .meme-item:hover .fa {
+        transform: rotate(405deg);
+        transition: all 0.6 linear;
+    }
 }
